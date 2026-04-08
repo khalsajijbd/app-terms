@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - JustCallTech</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: #EF4444;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 { font-size: 1.8em; margin-bottom: 8px; }
+        .header p { opacity: 0.9; font-size: 0.95em; }
+        .content { padding: 32px; }
+        .warning {
+            background: #FEF2F2;
+            border-left: 4px solid #EF4444;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .warning h3 { color: #EF4444; margin-bottom: 8px; font-size: 1em; }
+        .warning p { color: #666; font-size: 0.9em; line-height: 1.6; }
+        .info { margin-bottom: 24px; }
+        .info h3 { color: #333; margin-bottom: 12px; font-size: 1em; font-weight: 600; }
+        .info ul { list-style: none; }
+        .info ul li {
+            padding: 8px 0;
+            color: #555;
+            font-size: 0.9em;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .steps {
+            background: #F8FAFF;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .steps h3 { color: #1D4ED8; margin-bottom: 16px; font-size: 1em; }
+        .step {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .step-num {
+            background: #1D4ED8;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step p { color: #555; font-size: 0.9em; line-height: 1.5; }
+        .contact-box {
+            background: #F0F7FF;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .contact-box h3 { color: #1D4ED8; margin-bottom: 12px; }
+        .contact-box p { color: #555; font-size: 0.9em; margin-bottom: 8px; }
+        .contact-box a { color: #1D4ED8; font-weight: 600; text-decoration: none; }
+        .btn-delete {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: #EF4444;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 12px;
+        }
+        .btn-cancel {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: white;
+            color: #666;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1em;
+            border: 2px solid #E5E7EB;
+            text-decoration: none;
+        }
+        .footer {
+            padding: 16px 32px;
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+            color: #999;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>🗑️ Delete Account</h1>
+            <p>JustCallTech Account Deletion Request</p>
+        </div>
+
+        <div class="content">
+
+            <div class="warning">
+                <h3>⚠️ Warning — This action cannot be undone!</h3>
+                <p>Aapka account permanently delete ho jaayega. Saara data remove ho jaayega aur recover nahi ho sakta.</p>
+            </div>
+
+            <div class="info">
+                <h3>📋 Kya delete hoga:</h3>
+                <ul>
+                    <li>👤 Aapki profile information (naam, address, phone)</li>
+                    <li>📋 Saari booking history</li>
+                    <li>⭐ Ratings aur reviews</li>
+                    <li>🔔 Notification preferences</li>
+                    <li>📍 Saved locations</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>📱 App se Delete karne ka tarika:</h3>
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <p>JustCallTech app open karo</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <p>Profile → Settings mein jao</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <p>"Delete Account" button dabao</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <p>Confirm karo — Account 30 din mein permanently delete ho jaayega</p>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <h3>📧 Email se Request karo</h3>
+                <p>Agar app access nahi hai toh email karo:</p>
+                <p><a href="mailto:thakursinghkhalsa@gmail.com">thakursinghkhalsa@gmail.com</a></p>
+                <p style="margin-top:8px;">Subject: Delete Account Request</p>
+                <p>Body mein apna registered phone number likho</p>
+                <br>
+                <p>Ya WhatsApp karo:</p>
+                <p><a href="https://wa.me/917009404700">+91 7009404700</a></p>
+            </div>
+
+            <a href="mailto:thakursinghkhalsa@gmail.com?subject=Delete Account Request&body=Please delete my JustCallTech account. My registered phone number is: " class="btn-delete">
+                📧 Send Delete Request via Email
+            </a>
+
+            <a href="index.html" class="btn-cancel">
+                Cancel — Keep my account
+            </a>
+
+        </div>
+
+        <div class="footer">
+            <p>© 2026 JustCallTech. Account deletion requests are processed within 30 days.</p>
+        </div>
+
+    </div>
+</body>
+</html>
