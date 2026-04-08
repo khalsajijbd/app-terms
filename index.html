@@ -3,94 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Call Tech - Home</title>
-    <h1>JustCallTech - Computer Services</h1>
-<p>Mumbai's Trusted IT Service</p>
-<p>Contact: +917009404700</p>
+    <title>JustCallTech - Computer Services Mumbai</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6; color: #333;
+            background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+            min-height: 100vh; display: flex; align-items: center;
+            justify-content: center; padding: 20px;
         }
-        
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            max-width: 650px; width: 100%; margin: 0 auto;
+            background-color: white; border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2); overflow: hidden;
         }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 2.5em;
+        .header {
+            background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+            padding: 40px 30px; text-align: center; color: white;
         }
-        
-        p {
-            color: #7f8c8d;
-            margin-bottom: 30px;
-            font-size: 1.1em;
+        .header h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 8px; color: white; }
+        .header p { color: #BFDBFE; margin-bottom: 0; }
+        .badge {
+            display: inline-block; background: rgba(255,255,255,0.2);
+            padding: 4px 16px; border-radius: 20px; font-size: 0.85em;
+            margin-top: 10px; color: white;
         }
-        
-        .links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
+        .content { padding: 36px 30px; }
+        .tagline { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 30px; }
+        .stats { display: flex; justify-content: space-around; margin-bottom: 28px; text-align: center; }
+        .stat-number { font-size: 1.8em; font-weight: 800; color: #1D4ED8; }
+        .stat-label { font-size: 0.8em; color: #888; }
+        .services { background: #F0F7FF; border-radius: 12px; padding: 20px; margin-bottom: 28px; }
+        .services h2 { color: #1D4ED8; font-size: 1.1em; margin-bottom: 14px; }
+        .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .service-item {
+            background: white; border-radius: 8px; padding: 10px 14px;
+            font-size: 0.9em; color: #444;
         }
-        
-        a {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-weight: 500;
+        .visiting-fee {
+            background: #FFF7ED; border-left: 4px solid #EA580C;
+            border-radius: 8px; padding: 16px; margin-bottom: 28px;
+            font-size: 0.9em; color: #555;
         }
-        
-        a:hover {
-            background-color: #2980b9;
+        .visiting-fee strong { color: #EA580C; }
+        .contact-info { text-align: center; margin-bottom: 20px; font-size: 0.95em; color: #555; }
+        .contact-info a { color: #2563EB; text-decoration: none; font-weight: 600; }
+        .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 28px; }
+        a.btn {
+            display: inline-block; padding: 12px 28px; background-color: #2563EB;
+            color: white; text-decoration: none; border-radius: 8px;
+            font-weight: 600; font-size: 0.95em;
         }
-        
+        a.btn.outline { background: white; color: #2563EB; border: 2px solid #2563EB; }
+        a.btn.whatsapp { background: #25D366; }
         .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-            color: #95a5a6;
-            font-size: 0.9em;
+            padding: 20px 30px; border-top: 1px solid #F0F0F0;
+            color: #95a5a6; font-size: 0.85em; text-align: center;
         }
+        .footer a { color: #2563EB; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My App</h1>
-        <p>A simple and secure application with phone authentication.</p>
-        
-        <div class="links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+        <div class="header">
+            <h1>🔧 JustCallTech</h1>
+            <p>Mumbai's Trusted IT Service</p>
+            <span class="badge">⭐ 4.8 Rating · 500+ Customers</span>
         </div>
-        
+        <div class="content">
+            <p class="tagline">Fast & Reliable doorstep computer services in Mumbai</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Customers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.8⭐</div>
+                    <div class="stat-label">Avg Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Same Day</div>
+                    <div class="stat-label">Service</div>
+                </div>
+            </div>
+            <div class="services">
+                <h2>🛠️ Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">💻 Slow Laptop Fix — ₹499</div>
+                    <div class="service-item">🛡️ Virus Removal — ₹499</div>
+                    <div class="service-item">🪟 Windows Install — ₹499</div>
+                    <div class="service-item">🔋 Screen/Battery — ₹699</div>
+                    <div class="service-item">💾 Data Recovery — ₹999</div>
+                    <div class="service-item">📶 WiFi Setup — ₹399</div>
+                    <div class="service-item">🧹 Deep Cleaning — ₹499</div>
+                    <div class="service-item">📷 CCTV Setup — ₹999</div>
+                    <div class="service-item">🏠 AMC Home — ₹1299</div>
+                    <div class="service-item">🏢 AMC Office — ₹2999</div>
+                </div>
+            </div>
+            <div class="visiting-fee">
+                🏍️ <strong>Visiting Fee: ₹299</strong> (Non-Refundable)<br>
+                ✅ Agar aap repair/service lete hain — <strong>Visiting Fee Wave Off!</strong>
+            </div>
+            <div class="contact-info">
+                📞 <a href="tel:+917009404700">+91 7009404700</a> &nbsp;|&nbsp;
+                ✉️ <a href="mailto:thakursinghkhalsa@gmail.com">thakursinghkhalsa@gmail.com</a>
+            </div>
+            <div class="links">
+                <a href="https://wa.me/917009404700" class="btn whatsapp">💬 WhatsApp Us</a>
+                <a href="privacy.html" class="btn outline">Privacy Policy</a>
+                <a href="terms.html" class="btn outline">Terms of Service</a>
+            </div>
+        </div>
         <div class="footer">
-            <p>© 2026 My App. All rights reserved.</p>
-            <p>Contact: <a href="mailto:thakursinghkhalsa@gmail.com">thakursinghkhalsa@gmail.com</a></p>
+            <p>© 2026 JustCallTech. All rights reserved.</p>
+            <p>Mumbai, Maharashtra, India &nbsp;|&nbsp;
+            <a href="mailto:thakursinghkhalsa@gmail.com">thakursinghkhalsa@gmail.com</a></p>
         </div>
     </div>
 </body>
